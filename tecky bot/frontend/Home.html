@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../images/t-img.png" rel="icon"/>
+    <title>teckybot-Home</title>
+    <style>
+       
+        .navbar-logo {
+
+            width: 200px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 20px;
+        }
+
+        .navbar-nav .nav-item a {
+            color: #000;
+            font-size: 16px;
+            font-weight: 450;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 120px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        .navbar-nav .nav-item .nav-link {
+        color: black;
+    }
+
+        .navbar-nav .nav-item .nav-link.active {
+            border-top: 1.5px solid white;
+            border-right: 1px solid black;
+            border-bottom: 1.5px solid white;
+            border-left: 1px solid black;
+            border-radius: 10px;
+
+
+        }
+        .container-setting{
+            display: flex;
+            align-items: center;
+           
+            
+          
+        }
+        .rocket{
+            margin-top: 50px;
+        }
+        .content-img{
+            width: 90%;
+        }
+       @media (max-width: 767px) {
+            .container-setting {
+                flex-direction: column;
+                margin: auto;
+            }
+
+            .rocket-img,
+            .content-img {
+                width: 100%; /* Adjust image width for smaller screens */
+                margin-top: 10px;
+                
+            }
+        }
+   
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/teckybot-img.png" class="navbar-logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">TECH SUITES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid ">
+        <div class="row container-setting">
+            <div class="col-md-4 col-12 rocket">
+                <img src="../images/rocket.png" class="rocket-img" alt="Image">
+            </div>
+            <div class="col-md-8  col-12 content">
+                <img src="../images/invo-img.png" class="content-img" alt="Image">
+            </div>
+           
+
+        </div>
+    </div>
+</body>
+
+</html>
